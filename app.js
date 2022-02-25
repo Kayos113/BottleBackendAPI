@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
+import db from "./controllers/messageController.js";
 var corsOptions = {
   origin: "http://localhost:8081"
 };
@@ -13,8 +14,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //  Get ALL messages
 app.route("/messages/all")
-.get((req, res) => {res.json({ message: "Argh Matey!" });})
-.post((req,res) => {  });
+.get((req, res) => db.getAllMessages());
+.post((req,res) => db.);
 
 //  Get a RANDOM message
 app.get("/messages/rand", (req, res) => {  });
