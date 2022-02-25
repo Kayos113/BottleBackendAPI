@@ -33,5 +33,5 @@ export.getRandomMessage = function(req, res) {
 
 // Route "/massage/:id"
 export.getMessageById = function(id) {
-
+  
 }
