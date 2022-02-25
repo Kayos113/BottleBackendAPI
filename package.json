@@ -1,0 +1,33 @@
+{
+  "name": "bottle-backend-api",
+  "version": "1.0.0",
+  "description": "Backend API for handling message items in the Message in a Bottle web app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Knapw13/BottleBackendAPI.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "rest",
+    "api"
+  ],
+  "author": "Knapw13",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Knapw13/BottleBackendAPI/issues"
+  },
+  "homepage": "https://github.com/Knapw13/BottleBackendAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.3"
+  }
+}
