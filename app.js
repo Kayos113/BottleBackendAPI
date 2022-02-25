@@ -12,15 +12,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //  Get ALL messages
-app.get("/messages/all", (req, res) => {
-
-  res.json({ message: "Argh Matey!" });
-});
+app.route("/messages/all")
+.get((req, res) => {res.json({ message: "Argh Matey!" });})
+.post((req,res) => {  });
 
 //  Get a RANDOM message
-app.get("/messages/rand", (req, res) => {
-
-});
+app.get("/messages/rand", (req, res) => {  });
 
 //  Get a SPECIFIC message
 app.get("/messages/:id", (req, res) => {
