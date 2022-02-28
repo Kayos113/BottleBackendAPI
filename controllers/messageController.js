@@ -32,8 +32,11 @@ exports.writeMessage = function(req, res) {
 // Route "/messages/rand"
 exports.getRandomMessage = function(req, res) {
   getMessageCount();
-  console.log(nElems);
-  res.send(nElems+"");
+  const index = Math.floor(Math.random()*nElems);
+  Message.findOne().skip(index).exec( (err, foundMessage) => {
+    console.log(foundMessage);
+    res.send(foundMessage);
+  });
 }
 
 // Route "/message/:id"
